@@ -12,8 +12,8 @@ export const routes = [
     {path: '/user', component:User , 
     
     children: [
-        {path: '', component: UserStart },
-        {path: ':id/edit', component: UserEdit },
+        {path: '', component:UserStart},
+        {path: ':id/edit', component: UserEdit , props: true ,name:'userEdit'},
         {path: ':id', component: UserDetail , props: true}  //this.$route.params.id no longer needed
     ]},
     // {path: '/user',component:User},

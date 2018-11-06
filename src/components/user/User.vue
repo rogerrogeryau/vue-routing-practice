@@ -20,6 +20,9 @@
         methods:{
             navigateToHome(){
                 this.$router.push('/');
+                
+                // with named path
+                // this.$router.push({name:'homePath'});
             }
         },
         // watch:{
