@@ -14,7 +14,7 @@
         <router-link
             tag="button"
             class="btn btn-primary" 
-            :to="{name:'userEdit', params:{id:id}, query:{locale:'en', q:100}}">Edit User     
+            :to="{name:'userEdit',  query:{locale:'en', q:100}}">Edit User     
             </router-link> 
             
     </div>

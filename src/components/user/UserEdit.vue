@@ -3,6 +3,7 @@
         <h3>Edit the User</h3>
         <p>locale: {{$route.query.locale}}</p>
         <p>q: {{$route.query.q}}</p>
+        <p>userID: {{id}}</p>
         <!--<p>q: {{query.q}}</p>        -->
     </div>
 
@@ -13,7 +14,7 @@
 
 <script type="text/javascript" src="">
     export default{
-        // props:['query']
+        props:['id']
         
     }
     
