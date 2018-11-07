@@ -29,8 +29,12 @@ export const routes = [
     
     
     // redirect to specific route
-    // {path: '/redirect-me', redirect:'/user'}
-    {path: '/redirect-me', redirect:{name:'userStartPage'}}
+    // {path: '/redirect-me', redirect:'/user'}  //assign key-value object instead
+    {path: '/redirect-me', redirect:{name:'userStartPage'}},
+    
+    // catch-all routes / wildcards -- redriected to home page
+    {path: '*', redirect:'/'} 
+    
     
     // {path: '/user',component:User},
     // {path: '/user',component:User}
