@@ -9,8 +9,33 @@ const router = new VueRouter({
   // routes: routes
   // es6 syntax below:
   routes,
-  mode:'history'    //default mode = 'hash' mode with hashtag in the url path ; 'history' mode without hashtag
+  mode:'history',    //default mode = 'hash' mode with hashtag in the url path ; 'history' mode without hashtag
+  
+  // scroll to a specific position, and with savedPosition which is used when user return to the previous page
+  scrollBehavior(to, from, savedPosition){
+    if (savedPosition) {
+      return savedPosition;
+    }
+    
+    if (to.hash) {
+      return {selector: to.hash};
+    }
+    // this is alternative
+    // return {x:0, y:700};
+    
+    // scroll to the top
+    return {x:0, y:0};
+  }
 });
+
+
+
+
+// beforeEnter Guard
+router.beforeEach((to, from, next) =>{
+  console.log('global beforeEach');
+  next();
+})
 
 
 

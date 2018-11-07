@@ -5,6 +5,12 @@
         <p>q: {{$route.query.q}}</p>
         <p>userID: {{id}}</p>
         <!--<p>q: {{query.q}}</p>        -->
+        
+        <hr>
+        <buttton class="btn btn-primary">Confirm</buttton>
+        
+        <div style="height:700px"></div>
+        <p id="data">Some Extra Data</p>
     </div>
 
 </template>
